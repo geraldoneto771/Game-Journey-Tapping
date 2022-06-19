@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     public string name;
     public int health;
     public float valueMoneyEnemy = 0;
-
+    
     private Animator anim;
 
     public void Start()
@@ -27,10 +27,10 @@ public class Enemy : MonoBehaviour
     public void TapAction()
     {
         
-        enemySettings.health--;
+        enemySettings.health -= jogadorSettings.tapValue;
 
         
-        jogadorSettings.MyMoney += (0.10f + jogadorSettings.tapValue);
+        jogadorSettings.MyMoney += 0.10f;
 
         if (enemySettings.health <= 0)
         {

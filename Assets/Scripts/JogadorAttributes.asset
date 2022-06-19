@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6471ebd2cad96054ba6148285e55632a, type: 3}
   m_Name: JogadorAttributes
   m_EditorClassIdentifier: 
-  name: 
+  name: Geraldo
   MyMoney: 0
-  health: 0
-  tapValue: 0
+  health: 10
+  tapValue: 1
   animController: {fileID: 0}

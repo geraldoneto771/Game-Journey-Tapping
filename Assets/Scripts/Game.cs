@@ -11,22 +11,22 @@ public class Game : MonoBehaviour
     
     public GameObject texNameEnemy;
     public GameObject texMyMoney;
-    public CanvasGroup canvasButtonBuy;
+   // public CanvasGroup canvasButtonBuy;
     
     // Start is called before the first frame update
     void Start()
     {
-        canvasButtonBuy.blocksRaycasts = false;
+        //canvasButtonBuy.blocksRaycasts = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        texNameEnemy.GetComponent<TMPro.TextMeshProUGUI>().text = "Pecado da ira - " + enemySettings.health + "HP";
+        texNameEnemy.GetComponent<TMPro.TextMeshProUGUI>().text = enemySettings.name + "     " + enemySettings.health + "HP";
         texMyMoney.GetComponent<TMPro.TextMeshProUGUI>().text = "$" + jogadorSettings.MyMoney.ToString("f2");
         if(enemySettings.health <= 0)
         {
-            canvasButtonBuy.blocksRaycasts = true;
+            //canvasButtonBuy.blocksRaycasts = true;
             enemySettings.health = 20;
         }
     }
@@ -35,9 +35,9 @@ public class Game : MonoBehaviour
     {
         if(jogadorSettings.MyMoney >= 2)
         {
-            jogadorSettings.tapValue += 0.10f;
-            canvasButtonBuy.blocksRaycasts = false;
-            jogadorSettings.MyMoney -= 2;
+            //jogadorSettings.tapValue += 0.10f;
+           // canvasButtonBuy.blocksRaycasts = false;
+            //jogadorSettings.MyMoney -= 2;
         }
         
     }

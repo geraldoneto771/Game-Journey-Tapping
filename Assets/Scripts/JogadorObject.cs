@@ -8,6 +8,6 @@ public class JogadorObject : ScriptableObject
     public string name;
     public float MyMoney;
     public int health;
-    public float tapValue;
+    public int tapValue;
     public RuntimeAnimatorController animController;
 }
