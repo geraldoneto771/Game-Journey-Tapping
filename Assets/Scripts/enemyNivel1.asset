@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d60c0b6ac8dec49b08aadf497c181b, type: 3}
   m_Name: enemyNivel1
   m_EditorClassIdentifier: 
-  name: "Pecado da desaven\xE7a"
+  name: Pecado
   health: 20
   valueMoneyEnemy: 1
   animController: {fileID: 0}

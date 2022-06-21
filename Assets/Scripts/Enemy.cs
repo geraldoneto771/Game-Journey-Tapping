@@ -12,10 +12,10 @@ public class Enemy : MonoBehaviour
     public float valueMoneyEnemy = 0;
     
     private Animator anim;
-
+   
     public void Start()
     {
-        
+       
         anim = GetComponent<Animator>();
         anim.runtimeAnimatorController = enemySettings.animController;
         name = enemySettings.name;
@@ -32,12 +32,13 @@ public class Enemy : MonoBehaviour
         
         jogadorSettings.MyMoney += 0.10f;
 
-        if (enemySettings.health <= 0)
+        /*if (enemySettings.health <= 0)
         {
             jogadorSettings.MyMoney += enemySettings.valueMoneyEnemy;
+           
             
-
-        }
+        }*/
+       
 
     }
 

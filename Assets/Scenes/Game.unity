@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 261350770}
   - component: {fileID: 261350769}
   - component: {fileID: 261350771}
+  - component: {fileID: 261350773}
   - component: {fileID: 261350772}
   m_Layer: 0
   m_Name: PanelAreaGame
@@ -481,8 +482,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 261350772}
-        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
-        m_MethodName: TapAction
+        m_TargetAssemblyTypeName: Game, Assembly-CSharp
+        m_MethodName: TapGames
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -501,14 +502,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 261350767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 924852e76d9aaa14e9382cd68a92fb79, type: 3}
+  m_Script: {fileID: 11500000, guid: b53778059a9279c4aa961215cbad7e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemySettings: {fileID: 11400000, guid: ad052a6c58929224bbe62729528866e5, type: 2}
   jogadorSettings: {fileID: 11400000, guid: 35dbdb0994ebf6145a3ac74702173e67, type: 2}
-  name: 
-  health: 0
-  valueMoneyEnemy: 0
+  MyMoney: 0
+  texNameEnemy: {fileID: 216376899}
+  texMyMoney: {fileID: 1364929996}
+  textAmountEnemy: {fileID: 1653587821}
+  textNivel: {fileID: 1140260108}
+  amountEnemy: 1
+  maxAmountEnemey: 8
+  nivel: 0
+--- !u!95 &261350773
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261350767}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 32323c2d75b8f884f8426fd5cc8b8717, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &266134013
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,6 +1293,11 @@ MonoBehaviour:
   MyMoney: 0
   texNameEnemy: {fileID: 216376899}
   texMyMoney: {fileID: 1364929996}
+  textAmountEnemy: {fileID: 1653587821}
+  textNivel: {fileID: 1140260108}
+  amountEnemy: 1
+  maxAmountEnemey: 8
+  nivel: 0
 --- !u!4 &1190402707
 Transform:
   m_ObjectHideFlags: 0
